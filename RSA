@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp222222
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int p = int.Parse(textBox1.Text);
+            int q = int.Parse(textBox2.Text);
+            int n = p * q;
+            int f = (p - 1) * (q - 1);
+            textBox3.Text = "\n n = " + n + "\n f = " + f;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int p = int.Parse(textBox1.Text);
+            int q = int.Parse(textBox2.Text);
+            int n = p * q;
+            int E = int.Parse(textBox4.Text);
+            bool prost = true;
+            for (int i = 2; i <= E / 2; i++)
+            {
+                if (E % i == 0)
+                {
+                    prost = false;
+                    break;
+                }
+            }
+            if (prost)
+            {
+                textBox4.Text = "Открытый ключ " + "\n" + "(" + E + ", " + n + ")";
+            }
+            else
+            {
+                textBox4.Text = "Число не простое";
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int p = int.Parse(textBox1.Text);
+            int q = int.Parse(textBox2.Text);
+            int n = p * q;
+            int f = (p - 1) * (q - 1);
+            int E = int.Parse
+
+        }
+    }
+}
